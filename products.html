@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products & Services - Alpha Computer LTD</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="navbar-container"></div>
+<div id="mobile-nav-container"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="section-label orange">OUR SOLUTIONS</div>
+  <h1 class="section-title">Products & Services</h1>
+  <p class="section-subtitle">Comprehensive technology solutions tailored to meet your business needs</p>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar" id="filter-bar" style="justify-content:center;">
+  <button class="filter-btn active" onclick="filterProducts('all', this)">⊞ All</button>
+  <button class="filter-btn" onclick="filterProducts('av', this)">🔊 Audio Visual</button>
+  <button class="filter-btn" onclick="filterProducts('networking', this)">📡 Networking</button>
+  <button class="filter-btn" onclick="filterProducts('services', this)">🔧 Services</button>
+</div>
+
+<!-- ALL SOLUTIONS -->
+<section class="all-solutions" id="section-all">
+  <h2 class="section-title" style="text-align:center">All Solutions</h2>
+  <div class="section-divider center"></div>
+  <div class="solutions-grid">
+
+    <!-- Audio Visual cards -->
+    <div class="solution-card animate-on-scroll">
+      <img class="solution-card-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Audio Visual" style="object-fit:cover;height:200px;width:100%;display:block"/>
+      <div class="solution-card-body">
+        <div class="solution-card-icon">🔊</div>
+        <h3>Audio Visual</h3>
+        <p>Control rooms, smart classrooms, interactive screens, LED walls, stage lighting & more</p>
+        <a href="#" class="solution-link" onclick="filterProducts('av', null); return false;">View Products →</a>
+      </div>
+    </div>
+
+    <!-- Networking cards -->
+    <div class="solution-card animate-on-scroll">
+      <img class="solution-card-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80" alt="Networking" style="object-fit:cover;height:200px;width:100%;display:block"/>
+      <div class="solution-card-body">
+        <div class="solution-card-icon">📡</div>
+        <h3>Networking</h3>
+        <p>Managed switches, power amplifiers, structured cabling & LAN installations</p>
+        <a href="#" class="solution-link" onclick="filterProducts('networking', null); return false;">View Products →</a>
+      </div>
+    </div>
+
+    <!-- Services cards -->
+    <div class="solution-card animate-on-scroll">
+      <img class="solution-card-img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80" alt="Services" style="object-fit:cover;height:200px;width:100%;display:block"/>
+      <div class="solution-card-body">
+        <div class="solution-card-icon">🔧</div>
+        <h3>Services</h3>
+        <p>Technical support, maintenance, installation, testing & technical training</p>
+        <a href="#" class="solution-link" onclick="filterProducts('services', null); return false;">View Products →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AUDIO VISUAL -->
+<section class="product-detail-section filter-section" id="section-av">
+  <h2 class="section-title" style="text-align:center">Audio Visual</h2>
+  <div class="section-divider center"></div>
+  <div class="product-detail-grid">
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Control Room Setup"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">AUDIO VISUAL</div>
+        <h3>Control Room Setup</h3>
+        <p>Professional control room solutions with multi-screen video walls, operator consoles, and integrated AV systems for command and monitoring centers.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>Video wall controllers</li>
+          <li>Operator workstations</li>
+          <li>24/7 reliability design</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Government</span><span class="use-tag">Security</span><span class="use-tag">Corporate</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80" alt="Smart Classrooms"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">AUDIO VISUAL</div>
+        <h3>Smart Classrooms</h3>
+        <p>Complete smart classroom solutions integrating interactive displays, audio systems, and collaborative tools to enhance the learning experience.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>Interactive flat panels</li>
+          <li>Classroom audio system</li>
+          <li>Student response systems</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Schools</span><span class="use-tag">Universities</span><span class="use-tag">Training Centers</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80" alt="Interactive Screens"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">AUDIO VISUAL</div>
+        <h3>Interactive Screens</h3>
+        <p>Touch-enabled interactive flat panels and displays for education, collaboration, and presentations in any environment.</p>
+        <div class="specs-title">Key Specs:</div>
+        <ul class="specs-list">
+          <li>Sizes: 55" – 86"</li>
+          <li>20-point multi-touch</li>
+          <li>Android & Windows</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Education</span><span class="use-tag">Boardroom</span><span class="use-tag">Training</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=600&q=80" alt="LED Video Walls"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">AUDIO VISUAL</div>
+        <h3>LED Video Walls</h3>
+        <p>High-impact indoor and outdoor LED video walls delivering stunning visuals for events, retail, corporate lobbies, and control rooms.</p>
+        <div class="specs-title">Key Specs:</div>
+        <ul class="specs-list">
+          <li>Pixel pitch: P1.2 – P6</li>
+          <li>Brightness: 800–8000 nits</li>
+          <li>Seamless tiling</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Events</span><span class="use-tag">Retail</span><span class="use-tag">Corporate</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80" alt="Meeting Room Setup"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">AUDIO VISUAL</div>
+        <h3>Meeting Room Setup</h3>
+        <p>Complete meeting room AV solutions including displays, video conferencing, wireless presentation, and room booking systems.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>4K display / screen</li>
+          <li>Video conferencing system</li>
+          <li>Wireless presentation</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Corporate</span><span class="use-tag">Government</span><span class="use-tag">Hospitality</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1504509546545-e000b4a62425?w=600&q=80" alt="Stage Lighting"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">AUDIO VISUAL</div>
+        <h3>Stage Lighting</h3>
+        <p>Professional stage and event lighting systems including LED moving heads, spotlights, and DMX-controlled rigs for any event size.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>LED moving head lights</li>
+          <li>DMX control system</li>
+          <li>Trussing & rigging</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Concerts</span><span class="use-tag">Theatres</span><span class="use-tag">Events</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80" alt="Interactive Podium"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">AUDIO VISUAL</div>
+        <h3>Interactive Podium</h3>
+        <p>Standing touch-screen podium for interactive presentations, digital signage, and visitor engagement at reception or exhibition areas.</p>
+        <div class="specs-title">Key Specs:</div>
+        <ul class="specs-list">
+          <li>21.5" touch screen</li>
+          <li>Height adjustable</li>
+          <li>Built-in PC & speakers</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Reception</span><span class="use-tag">Exhibitions</span><span class="use-tag">Education</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NETWORKING -->
+<section class="product-detail-section filter-section" id="section-networking">
+  <h2 class="section-title" style="text-align:center">Networking</h2>
+  <div class="section-divider center"></div>
+  <div class="product-detail-grid">
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80" alt="Managed Network Switch"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">NETWORKING</div>
+        <h3>Managed Network Switch</h3>
+        <p>Enterprise-grade managed switches for reliable, high-speed network connectivity with advanced VLAN and QoS configuration.</p>
+        <div class="specs-title">Key Specs:</div>
+        <ul class="specs-list">
+          <li>Gigabit & 10G ports</li>
+          <li>VLAN & QoS support</li>
+          <li>Web-based management</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Enterprise</span><span class="use-tag">Education</span><span class="use-tag">Government</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Power Amplifier"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">NETWORKING</div>
+        <h3>Power Amplifier</h3>
+        <p>High-performance power amplifiers for distributing audio signals across large venues, offices, and public address systems.</p>
+        <div class="specs-title">Key Specs:</div>
+        <ul class="specs-list">
+          <li>Power: 100W – 2000W</li>
+          <li>Multi-zone output</li>
+          <li>Low distortion design</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Events</span><span class="use-tag">Offices</span><span class="use-tag">Public Address</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&q=80" alt="Structured Cabling"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">NETWORKING</div>
+        <h3>Structured Cabling</h3>
+        <p>Professional structured cabling solutions including Cat6, Cat6A, and fiber optic installations for reliable data and voice networks.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>Cat6 / Cat6A / Fiber</li>
+          <li>Patch panels & racks</li>
+          <li>Full documentation</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Offices</span><span class="use-tag">Data Centers</span><span class="use-tag">Campuses</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&q=80" alt="LAN Installations"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">NETWORKING</div>
+        <h3>LAN Installations</h3>
+        <p>End-to-end Local Area Network design and installation for businesses, institutions, and government facilities of all sizes.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>Network design & planning</li>
+          <li>Switch & router setup</li>
+          <li>WiFi access points</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">SMEs</span><span class="use-tag">Schools</span><span class="use-tag">Government</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="product-detail-section filter-section" id="section-services">
+  <h2 class="section-title" style="text-align:center">Services</h2>
+  <div class="section-divider center"></div>
+  <div class="product-detail-grid">
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80" alt="Technical Support"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">SERVICES</div>
+        <h3>Technical Support</h3>
+        <p>Dedicated technical support team available to troubleshoot, diagnose, and resolve issues with all installed systems promptly.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>Remote & on-site support</li>
+          <li>Fast response time</li>
+          <li>Dedicated support line</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">All Sectors</span><span class="use-tag">Priority Plans</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="After Sales Maintenance"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">SERVICES</div>
+        <h3>After Sales Maintenance</h3>
+        <p>Comprehensive preventive and corrective maintenance programs to keep your technology systems running at peak performance.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>Scheduled maintenance visits</li>
+          <li>Parts replacement</li>
+          <li>Performance reporting</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">Annual Contracts</span><span class="use-tag">All Products</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80" alt="Installation and Configuration"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">SERVICES</div>
+        <h3>Installation & Configuration</h3>
+        <p>Professional installation and full system configuration by our certified technicians, following industry best practices and safety standards.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>Site survey & planning</li>
+          <li>Full system integration</li>
+          <li>Handover & sign-off</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">All Products</span><span class="use-tag">Nationwide</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80" alt="Testing and Commissioning"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">SERVICES</div>
+        <h3>Testing & Commissioning</h3>
+        <p>Rigorous testing and commissioning of all installed systems to verify performance, reliability, and compliance with project specifications.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>End-to-end system testing</li>
+          <li>Performance verification</li>
+          <li>Commissioning report</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">All Projects</span><span class="use-tag">Quality Assured</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+    <div class="product-detail-card animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Technical Training"/>
+      <div class="product-detail-card-body">
+        <div class="product-category">SERVICES</div>
+        <h3>Technical Training</h3>
+        <p>Tailored training programs empowering your team to confidently operate, manage, and maintain all installed technology systems.</p>
+        <div class="specs-title">Includes:</div>
+        <ul class="specs-list">
+          <li>On-site & classroom training</li>
+          <li>User manuals provided</li>
+          <li>Certification available</li>
+        </ul>
+        <div class="use-tags"><span class="use-tag">All Sectors</span><span class="use-tag">Customized</span></div>
+        <a href="support.html"><button class="btn-quote">Request Quote</button></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CUSTOM SOLUTION CTA -->
+<section class="custom-solution">
+  <h2>Need a Custom Solution?</h2>
+  <p>Our team of experts is ready to design and implement a technology solution tailored to your specific requirements</p>
+  <a href="support.html"><button class="btn-yellow">✉ Contact Our Team</button></a>
+</section>
+
+<div id="footer-container"></div>
+
+<script src="shared.js"></script>
+<script>
+document.getElementById('navbar-container').innerHTML = getNavbar('Products & Services');
+document.getElementById('footer-container').innerHTML = getFooter();
+initNavbarScroll(false);
+initScrollAnimations();
+
+function filterProducts(category, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+
+  const allSection = document.getElementById('section-all');
+  const filterSections = document.querySelectorAll('.filter-section');
+
+  if (category === 'all') {
+    allSection.style.display = 'block';
+    filterSections.forEach(s => s.style.display = 'none');
+    document.querySelector('.filter-btn').classList.add('active');
+  } else {
+    allSection.style.display = 'none';
+    filterSections.forEach(s => s.style.display = 'none');
+    const target = document.getElementById('section-' + category);
+    if (target) {
+      target.style.display = 'block';
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    if (!btn) {
+      const map = { av: 1, networking: 2, services: 3 };
+      const btns = document.querySelectorAll('.filter-btn');
+      if (map[category] !== undefined) btns[map[category]].classList.add('active');
+    }
+  }
+}
+</script>
+</body>
+</html>
